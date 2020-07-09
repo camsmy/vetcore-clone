@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu+Condensed&family=Ubuntu:wght@300&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --main-font: 'Ubuntu Condensed', sans-serif;
+    --head-font: 'Roboto', sans-serif;
+    --semi-head-font:'Ubuntu', sans-serif;
+    /* Calculation */
+    --responsive: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1200 - 420)));
+    /* Ranges from 421px to 1199px */
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:link {
+    text-decoration: none;
+    outline: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: var(--head-font);
+    font-weight: 700;
+    --max-font: 33;
+    --min-font: 25;
+    font-size: var(--responsive);
+}
+
+p {
+    font-family: var(--main-font);
+    margin: auto;
+    margin-top: 25px;
+    --max-font: 20;
+    --min-font: 14;
+    font-size: var(--responsive);
+    line-height: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
