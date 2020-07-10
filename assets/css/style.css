@@ -32,6 +32,7 @@ ul {
 
 .center {
     text-align: center;
+    margin: auto;
 }
 
 .mx-auto {
@@ -40,6 +41,7 @@ ul {
 
 img {
     max-width: 100%;
+    min-width: 350px;
 }
 
 h1 {
@@ -72,14 +74,13 @@ h5 {
 }
 
 p {
-    margin: auto;
-    --max-font: 20;
+    --max-font: 16;
     --min-font: 14;
     font-size: var(--responsive);
 }
 
 .container {
-    width: 100vw;
+    width: 100%;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -223,7 +224,7 @@ p#main-h1 {
     font-family: var(--Ubuntu-Condensed);
     font-size: var(--responsive);
     --max-font: 35;
-    --min-font: 16;
+    --min-font: 28;
     font-weight: 600;
     padding-bottom: 50px;
 }
@@ -310,10 +311,51 @@ h2#main2-h2{
 }
 
 footer{
-    background-image: linear-gradient(180deg, #eacda3 0%, #d6ae7b 29%);
+    background-color: #D6AE7B;
 }
 #footer-separator{
         transform:scale(1, -1) translate(0px,-5px);
-        width: calc(300% + 1.3px);
         height: 138px;
+        width: 100%;
+}
+h2#footer-h2{
+    font-family: var(--Roboto);
+    font-weight: 600;
+    --max-font:38;
+    --min-font:25;
+    font-size: var(--responsive);
+}
+p#footer-p{
+    font-family: var(--Roboto);
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 27px;
+    font-size: var(--responsive);
+}
+#social-icons li{
+    display: inline-flex; /* make element size relative to content */
+    align-items: center; /* vertical alignment of items */
+    line-height: 30px; /* vertically size by height, line-height or padding */
+    padding: 0px 5px; /* horizontal with padding-l/r */
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#social-icons{
+    margin-bottom: 50px;
+}
+p#copyright{
+    font-family: var(--Roboto);
+    font-weight: 100;
+    font-size: var(--responsive);
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.81);
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+    display: flex;
+}
+.fa-angle-up,.fa-facebook-f,.fa-instagram{
+    color: black;
 }
