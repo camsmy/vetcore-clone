@@ -32,7 +32,6 @@ ul {
 
 .center {
     text-align: center;
-    margin: auto;
 }
 
 .mx-auto {
@@ -41,7 +40,7 @@ ul {
 
 img {
     max-width: 100%;
-    min-width: 350px;
+    min-width: 250px;
 }
 
 h1 {
@@ -54,7 +53,7 @@ h1 {
 h2 {
     font-weight: 300;
     --max-font: 24;
-    --min-font: 20;
+    --min-font: 16;
     font-size: var(--responsive);
 }
 
@@ -68,7 +67,7 @@ h3 {
 h5 {
     font-weight: 600;
     --max-font: 16;
-    --min-font: 12;
+    --min-font: 16;
     font-size: var(--responsive);
     line-height: 19px;
 }
@@ -119,9 +118,11 @@ p {
 .my-2 {
     margin: 20px 0px;
 }
-.my-5{
+
+.my-5 {
     margin: 50px 0px;
 }
+
 .mx-2 {
     margin: 0px 20px;
 }
@@ -129,15 +130,19 @@ p {
 .m-2 {
     margin: 20px 20px;
 }
-.mt-5{
+
+.mt-5 {
     margin-top: 50px;
 }
+
 .m-1 {
     margin: 10px 10px;
 }
+
 .p-1 {
     margin: 10px 10px;
 }
+
 .px-4 {
     margin: 0px 40px;
 }
@@ -149,7 +154,8 @@ nav {
     align-items: center;
     background-color: #ffffff;
     z-index: 1;
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed;
+    /* Set the navbar to fixed position */
     width: 100%;
 }
 
@@ -171,6 +177,7 @@ header {
 
 .main-head h1 {
     font-family: var(--Roboto);
+    --min-font: 32;
 }
 
 .main-head h2 {
@@ -185,8 +192,8 @@ header {
     line-height: 41px;
     font-family: var(--Ubuntu);
     font-weight: 300;
-    --max-font:26;
-    --min-font:20;
+    --max-font: 26;
+    --min-font: 16;
     font-size: var(--responsive);
     color: rgba(12, 12, 12, 0.81);
 }
@@ -198,7 +205,8 @@ header {
     text-align: center;
     display: flex;
 }
-.btn-primary{
+
+.btn-primary {
     box-shadow: -10px 7px 10px 0px rgba(0, 0, 0, 0.5);
     padding: 15px 30px;
     font-family: var(--Ubuntu-Condensed);
@@ -206,7 +214,7 @@ header {
     border-radius: 4px;
 }
 
-#header-h5{
+#header-h5 {
     font-family: var(--Roboto);
 }
 
@@ -224,7 +232,7 @@ p#main-h1 {
     font-family: var(--Ubuntu-Condensed);
     font-size: var(--responsive);
     --max-font: 35;
-    --min-font: 28;
+    --min-font: 33;
     font-weight: 600;
     padding-bottom: 50px;
 }
@@ -242,6 +250,7 @@ div#main-text h2 {
     font-family: var(--Ubuntu-Condensed);
     font-weight: 600;
     --max-font: 25;
+    --min-font: 25;
     font-size: var(--responsive);
     padding: 10px 0px;
     ;
@@ -250,6 +259,7 @@ div#main-text h2 {
 div#main-text p {
     font-family: var(--Ubuntu);
     --max-font: 16;
+    --min-font: 16;
     font-size: var(--responsive);
     line-height: 24px;
     color: #636363;
@@ -267,84 +277,101 @@ div#main-text p {
 
 
 
-.section-protect{
+.section-protect {
     background-image: linear-gradient(180deg, #d6ae7b 0%, #fceabb 100%);
     padding: 100px 0px;
 }
-.separator{
-    transform:scale(1, -1) translate(0px,-5px);
+
+.separator {
+    transform: scale(1, -1) translate(0px, -5px);
 }
-p#section-h1{
+
+p#section-h1 {
     font-family: var(--Ubuntu-Condensed);
     font-size: var(--responsive);
     --max-font: 35;
-    --min-font: 16;
+    --min-font: 33;
     font-weight: 600;
 }
-p#section-p{
+
+p#section-p {
     font-family: var(--Ubuntu);
-    --max-font:16;
+    --max-font: 16;
+    --min-font: 16;
+    line-height: 27px;
     font-size: var(--responsive);
     font-weight: 300;
     color: rgba(0, 0, 0, 0.81);
 }
 
-.btn-secondary{
+.btn-secondary {
     border-radius: 50px;
     padding: 20px 45px;
     font-weight: 600;
     font-family: var(--Roboto);
-    --max-font:18;
+    --max-font: 18;
     --min-font: 16;
     font-size: var(--responsive);
     letter-spacing: 1.5px;
 }
 
-h2#main2-h2{
+h2#main2-h2 {
     font-family: var(--Roboto);
     font-weight: 600;
-    --max-font:24;
-    --min-font:16;
+    --max-font: 24;
+    --min-font: 24;
     color: #ffb650;
     font-size: var(--responsive);
     margin-bottom: 20px;
 }
 
-footer{
+footer {
     background-color: #D6AE7B;
 }
-#footer-separator{
-        transform:scale(1, -1) translate(0px,-5px);
-        height: 138px;
-        width: 100%;
+
+#footer-separator {
+    transform: scale(1, -1) translate(0px, -5px);
+    height: 138px;
+    width: 100%;
 }
-h2#footer-h2{
+
+h2#footer-h2 {
     font-family: var(--Roboto);
     font-weight: 600;
-    --max-font:38;
-    --min-font:25;
+    --max-font: 45;
+    --min-font: 45;
     font-size: var(--responsive);
 }
-p#footer-p{
+
+p#footer-p {
     font-family: var(--Roboto);
     font-weight: 400;
     margin-top: 30px;
     line-height: 27px;
+    --max-font: 16;
+    --min-font: 16;
     font-size: var(--responsive);
 }
-#social-icons li{
-    display: inline-flex; /* make element size relative to content */
-    align-items: center; /* vertical alignment of items */
-    line-height: 30px; /* vertically size by height, line-height or padding */
-    padding: 0px 5px; /* horizontal with padding-l/r */
+
+#social-icons li {
+    display: inline-flex;
+    /* make element size relative to content */
+    align-items: center;
+    /* vertical alignment of items */
+    line-height: 30px;
+    /* vertically size by height, line-height or padding */
+    padding: 0px 5px;
+    /* horizontal with padding-l/r */
     border: 1px solid #000;
     border-radius: 50%;
     margin-right: 20px;
 }
-#social-icons{
+
+#social-icons {
     margin-bottom: 50px;
 }
-p#copyright{
+
+p#copyright {
     font-family: var(--Roboto);
     font-weight: 100;
     font-size: var(--responsive);
@@ -352,10 +379,45 @@ p#copyright{
     color: rgba(0, 0, 0, 0.81);
 }
 
-.row-reverse{
+.row-reverse {
     flex-direction: row-reverse;
-    display: flex;
 }
-.fa-angle-up,.fa-facebook-f,.fa-instagram{
+
+.fa-angle-up,
+.fa-facebook-f,
+.fa-instagram {
     color: black;
+}
+
+@media (max-width: 575px) {
+    .m-center {
+        text-align: center;
+    }
+
+    .main-head {
+        padding: 150px 10px;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .h2-line-height {
+        line-height: 27px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .px-2 {
+        padding: 0px 20px;
+    }
+
 }
