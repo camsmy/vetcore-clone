@@ -379,8 +379,9 @@ p#copyright {
     color: rgba(0, 0, 0, 0.81);
 }
 
-.row-reverse {
-    flex-direction: row-reverse;
+.flex-end {
+    justify-content: flex-end;
+    display: flex;
 }
 
 .fa-angle-up,
@@ -388,6 +389,11 @@ p#copyright {
 .fa-instagram {
     color: black;
 }
+
+
+
+
+
 
 @media (max-width: 575px) {
     .m-center {
@@ -419,5 +425,7 @@ p#copyright {
     .px-2 {
         padding: 0px 20px;
     }
-
+    .flex-end {
+        display: block;
+    }
 }
