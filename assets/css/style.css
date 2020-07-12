@@ -40,7 +40,7 @@ ul {
 
 img {
     max-width: 100%;
-    min-width: 250px;
+    min-width: 200px;
 }
 
 h1 {
@@ -192,7 +192,7 @@ header {
     line-height: 41px;
     font-family: var(--Ubuntu);
     font-weight: 300;
-    --max-font: 26;
+    --max-font: 20;
     --min-font: 16;
     font-size: var(--responsive);
     color: rgba(12, 12, 12, 0.81);
@@ -212,7 +212,13 @@ header {
     font-family: var(--Ubuntu-Condensed);
     font-weight: 700;
     border-radius: 4px;
+    transition: all .2s ease-in-out;
 }
+
+.btn-primary:hover{
+    transform: scale(1.1);
+}
+
 
 #header-h5 {
     font-family: var(--Roboto);
@@ -314,7 +320,11 @@ p#section-p {
     font-size: var(--responsive);
     letter-spacing: 1.5px;
 }
-
+.btn-secondary:hover{
+    background-color: #000000;
+    color:#FFB650;
+    
+}
 h2#main2-h2 {
     font-family: var(--Roboto);
     font-weight: 600;
@@ -390,11 +400,6 @@ p#copyright {
     color: black;
 }
 
-
-
-
-
-
 @media (max-width: 575px) {
     .m-center {
         text-align: center;
@@ -425,6 +430,7 @@ p#copyright {
     .px-2 {
         padding: 0px 20px;
     }
+
     .flex-end {
         display: block;
     }
