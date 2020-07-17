@@ -5,32 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/grids.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <title>Vet Core + Philippines’ Natural Tick and Flea Protection</title>
 </head>
 
 <body>
+    <nav class="nav">
+        <div class="container">
+                <img class="logo" src="./assets/images/cropped-vet-core-text-logo.png" alt="logo">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Feedbacks</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Order Now</a></li>
+                </ul>
+        </div>
+    </nav>
+
     <header>
-        <nav>
-            <div class="container">
-                <div class="row justify-content-space-between m-center">
-                    <img src="./assets/images/cropped-vet-core-text-logo.png" alt="logo">
-                    <ul class="d-flex align-items-center">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Feedbacks</li>
-                        <li>Contact Us</li>
-                        <li>Order Now</li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
         <div class="container main-head center">
             <div class="row column align-items-center center">
                 <div class="col-xl-6 m-center column">
-                    <img src="./assets/images/Soap-and-Spray-Mockup-1.png" alt="image1">
+                    <img class="header-img" src="./assets/images/Soap-and-Spray-Mockup-1.png" alt="image1">
                 </div>
                 <div class="col-xl-6">
                     <div class="row justify-content d-flex hide">
@@ -61,11 +62,12 @@
                 <p id="main-h1" class="center">Save your Dog from Ticks and Fleas</p>
             </div>
             <div class="row">
+                <div class="main-section">
                 <div class="col-xl-4 align-content-center">
                     <div class="row my-5">
                         <div class="col-xl-6 m-1 column align-items-center center" id="main-text">
                             <i class="fas fa-shield-alt fa-3x mx-2"></i>
-                            <div class="col-xl-12">
+                            <div class="col-xl-12 text-align-left">
                                 <h2>Tick and Flea Protection</h2>
                                 <p>Protects your Dogs from Ticks, Fleas, Flea Larvae and Flea Eggs
                                 </p>
@@ -75,7 +77,7 @@
                     <div class="row">
                         <div class="col-xl-6 m-1 column align-items-center center" id="main-text">
                             <i class="far fa-clock fa-3x mx-2"></i>
-                            <div class="col-xl-12">
+                            <div class="col-xl-12 text-align-left">
                                 <h2>Long lasting</h2>
                                 <p>Protect your Dog for up to 2 weeks in a single application
                                 </p>
@@ -83,13 +85,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 m-1 px-4 column center">
+                <div class="col-xl-4 column center">
                     <img src="./assets/images/Soap-and-Spray-Mockup-2.png" alt="image2">
                 </div>
                 <div class="col-xl-4 align-content-center">
                     <div class="row my-5">
                         <div class="col-xl-6 m-1 column align-items-center center column-reverse" id="main-text">
-                            <div class="col-xl-12">
+                            <div class="col-xl-12 text-align-right">
                                 <h2>Natural Ingredients </h2>
                                 <p>Made from premium quality natural ingredients
                                 </p>
@@ -99,13 +101,14 @@
                     </div>
                     <div class="row">
                         <div class="col-xl-6 m-1 column align-items-center center column-reverse" id="main-text">
-                            <div class="col-xl-12">
+                            <div class="col-xl-12 text-align-right">
                                 <h2>Nationwide Delivery </h2>
                                 <p>Hassle free ordering process and nationwide COD in the Philippines </p>
                             </div>
                             <i class="fas fa-plane-departure fa-3x mx-2"></i>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
