@@ -504,7 +504,6 @@ p#copyright {
 .fa-instagram {
   color: black;
 }
-
 @media (max-width: 768px) {
 
   .m-center,
@@ -567,6 +566,13 @@ p#copyright {
   .separator-top svg {
     width: calc(99.9%);
     height: 160px;
+  }
+  .separator-section svg {
+   zoom:100;
+  }
+  .nav li a:hover{
+    color: #fff;
+    background-color: #E6CF91;
   }
 }
 
